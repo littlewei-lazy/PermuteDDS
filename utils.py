@@ -131,14 +131,6 @@ def get_fp(smile):
     return hashtt, map4, maccs
 
 
-# morded_calculator = Calculator(descriptors, ignore_3D= False)
-
-# def mordred(smiles): return np.array([list(morded_calculator(Chem.MolFromSmiles(smiles))
-#                                       .fill_missing(value=0.)
-#                                       .values())])\
-#     .astype(np.float32)
-
-
 def mkdir(path):
     folder = os.path.exists(path)
     if not folder:

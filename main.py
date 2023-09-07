@@ -17,7 +17,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = 'false'
 
 if __name__ == '__main__':
     dataset_name = 'ONEIL'  # ONEIL or ALMANAC
-    task_name = 'regression'  # regression or classification
+    task_name = 'regression'
 
     # random, leave_cline, leave_comb
     cv_mode_ls = [1, 2, 3]
@@ -60,7 +60,6 @@ if __name__ == '__main__':
         val_tables.float_format = '.3'
         t_tables.float_format = '.3'
 
-        config_drug_feature = init_featurizer()
         # synergy_data used for train-val-test
         synergy_data, independent_test = data_split(synergy, test_size=0.1, rd_seed=seed)
         # [drug1, drug2, gene, mutation, label]
