@@ -12,6 +12,7 @@ PermuteDDS: A permutable feature fusion network for Drug-Drug Synergy prediction
 * tmap: 1.0
 
 # Run the code
+Create environment with permuteDDS.yaml
 Select the dataset in main.py
 ```
 python main.py
